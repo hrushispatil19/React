@@ -1,0 +1,74 @@
+What is React JS?
+--------------------
+    > React (also known as ReactJS) is a javascript library for building user interfaces. 
+      It is maintained by Facebook and community of individual developersand companies.
+    > React is used to build user interfaces specifically for single page and mobile applications.
+    > React also allows to create reusable UI components.
+
+Setup (SR):
+-------
+    > Node JS 
+    > VS Code
+
+Create React App:
+-------------------
+    > Go to command prompt
+    > Enter below command to create react app
+	*Using NPX: (NPX is npm package runner)
+        	npx create-react-app <project_name>
+	Using NPM:
+		> npm install create-react-app -g
+		> create-react-app <project_name>
+		
+      It will create app folder in specified directory.
+    > To start created app, enter below command
+        npm start
+    > To create a production build, use below command
+	npm run build.
+
+Folder Structure:
+--------------------
+
+package.json: 
+    This file holds metadata relevant to the project like project description, version of the project, project dependencies, scripts,
+    configuration data, etc.
+
+package-lock.json:
+    This file contains all the node modules related details.
+
+node modules folder:
+    This is the folder in which all the dependencies are installed. It is generated when we run create react app command.
+
+index.html:
+    This is only HTML file in the application which is entry point of our application.
+
+
+Single page application:
+-------------------------
+    It's a web application that interacts with user by dynamically rewriting 
+    the current page rather than loading entire new pages from a server.
+
+JSX:
+-----
+    It's a javascript extension. It allows us to define react elements using syntax
+    that looks like HTML. 
+
+    Example:
+       React syntax:  const element= React.createElements('h1',null,'Hello React');
+       JSX syntax  :  const element= <h1> Hello, React </h1>;
+
+DOM vs VIRTUAL DOM:
+--------------------
+    > DOM is an abstraction of structured text where HTML tags become nodes in the DOM. While HTML is text,
+      the DOM is an in-memory representation of this text in the form of nodes. The DOM provides an interface 
+      to traverse and modify the nodes.
+
+    > Virtual DOM is an abstraction of the DOM. It is lightweight and detached from the browser specific 
+      implementation details.
+
+
+React DOM:
+-----------
+    > React relies on Virtual DOM to render elements into the browser.
+    > Virtual DOM (VDOM) is a programming concept where UI is kept in memory and synced with real DOM.
+    > Virtual DOM are the objects representing the used interface.

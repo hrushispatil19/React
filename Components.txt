@@ -1,0 +1,61 @@
+Components:
+-------------
+> Components describe a part of the user interface. 
+> They are re-usable and can be nested inside other components.
+> Components are building blocks of any react app.
+> Components code is placed in Javascript or JSX file.
+
+
+Types of Components: (Refer ES6 functions and classes concept)
+----------------------
+1) Stateless Functional Components
+
+   function welcome(props)
+   {
+	return <h1> Hello, {props.name} </h1>;
+   }
+
+2) Stateful Class Components
+
+   > Stateful class is a class that extends Component class from the react library.
+   > They must contain Render method returning HTML
+
+   class Welcome extends React.Component {
+	render() {
+		return <h1> Hello, {this.props.name} </h1>;
+	}
+   }
+
+**Note: After React 16.7.0-alpha version, React team introduced new feature that lets you use state 
+	and features without writing a class i.e Hooks. 
+	So now there are 2 types of components:
+		1) Functional components 2) Class components
+
+Functional Components:
+-----------------------
+> Functional Components are just javascript functions which optionally recieve an object of properties 
+  and returns HTML or JSX which describes UI.
+
+Class Components:
+-----------------------
+> Class Components are basically ES6 classes optionally recieve props as input and return HTML or JSX.
+> A class components can also maintain a private internal state (information to describe UI). 
+
+
+Functional vs Class Components:
+---------------------------------
+
+*Functional Components:
+	> Simple Functions
+	> Use Func components as much as possible
+	> Absence of this keyword
+	> Solution without using state (before 16.7.0-alpha v)
+	> Mainly responsible for the UI
+	> It's also called Stateless/Dumb/Presentational components
+
+*Class Components:
+	> More feature rich
+	> Maintain their own private data- state
+	> Complex UI logic
+	> Provide lifecycle hooks
+

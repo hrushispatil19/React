@@ -1,0 +1,36 @@
+JSX:
+------
+ > JSX (JavaScript XML) is an extension to the JavaScript language syntax.
+ > Used to write XML-like code for elements and components.
+ > JSX tags have a tag name, attributes, and childrens.
+ > JSX is not a necessary to write React application.
+ > JSX makes react code simpler and elegant.
+ > JSX ultimately translates to pure javascript which is understood by browsers.
+
+React syntax:
+--------------
+return React.createElements('h1',null,'Hello React'); //(Element, additional properties, children of element)
+	       
+Complexity: Suppose we want to create h1 under div tag. So we need to write React.createElements 2 times like below
+	    return React.createElements(
+		'div', {id: 'hello', className: 'hello'}, React.createElements('h1', null, 'Hello, React')
+	    )
+		
+JSX syntax  :
+--------------
+return(
+	<div id='hello' className='hello'> <h1> Hello, React </h1> </div>
+      )
+
+
+JSX differences: (vs HTML)
+-------------------------
+
+> class -> className
+> maxlength -> maxLength 
+> for   -> htmlFor
+> camelCase property naming convention
+	* onclick  -> onClick
+	* onchange -> onChange
+	* tabindex -> tabIndex
+
